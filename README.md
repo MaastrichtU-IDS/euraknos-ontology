@@ -1,8 +1,10 @@
 ![Generate documentation](https://github.com/MaastrichtU-IDS/euraknos-ontology/workflows/Generate%20documentation/badge.svg) 
 
-OWL Ontology for the EURAKNOS project, and documentation website
+OWL Ontology for the EURAKNOS project, and documentation website.
 
-### Generate docs
+The documentation website will be updated automatically when a change is made to the [euraknos-ontology.owl](https://github.com/MaastrichtU-IDS/euraknos-ontology/blob/master/euraknos-ontology.owl) file on the `master` branch.
+
+### Generate docs locally
 
 See Ontospy documentation: http://lambdamusic.github.io/Ontospy
 
@@ -10,6 +12,13 @@ Install Ontospy:
 
 ```bash
 pip install ontospy[FULL]
+```
+
+Clone the repository:
+
+```bash
+git clone https://github.com/MaastrichtU-IDS/euraknos-ontology.git
+cd euraknos-ontology
 ```
 
 Using Ontospy, from the commandline
