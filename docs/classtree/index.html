@@ -187,7 +187,7 @@
 	<h1 class="title">Ontology:&nbsp;<a href="javascript:showpanel('ontoinfo');">https://w3id.org/euraknos</a></h1>
 
 	<p>
-    <small class="credits">Ontology documentation automatically generated with <a class="greylink" href="http://lambdamusic.github.io/Ontospy/" target="_blank">Ontospy</a> on 20th July 2020 11:51 </small>
+    <small class="credits">Ontology documentation automatically generated with <a class="greylink" href="http://lambdamusic.github.io/Ontospy/" target="_blank">Ontospy</a> on 20th July 2020 12:00 </small>
   </p>
 
 	<hr>
@@ -224,7 +224,7 @@
 
 
 	<hr>
-    <small class="credits">Ontology documentation automatically generated with <a class="greylink" href="http://lambdamusic.github.io/Ontospy/" target="_blank">Ontospy</a> on 20th July 2020 11:51 </small>
+    <small class="credits">Ontology documentation automatically generated with <a class="greylink" href="http://lambdamusic.github.io/Ontospy/" target="_blank">Ontospy</a> on 20th July 2020 12:00 </small>
 
 
 
@@ -301,10 +301,10 @@
             owl:onProperty :hasDuration ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty :hasPlayerType ;
+            owl:onProperty :hasTranscript ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty :hasTranscript ;
+            owl:onProperty :hasPlayerType ;
             owl:someValuesFrom xsd:string ] ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Output [ a owl:Restriction ;
@@ -527,13 +527,13 @@
     rdfs:label &quot;Dataset&quot;@en ;
     rdfs:comment &quot;The output of the Thematic Network is a set of data that has been collected for some purpose and through the adoption of the appropriate collection methods/techniques.&quot;@en ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasIssn ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
             owl:onProperty :hasVariableMeasured ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty :hasMeasurementTechnique ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty :hasIssn ;
             owl:someValuesFrom xsd:string ] ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Output [ a owl:Restriction ;
@@ -964,11 +964,11 @@
     rdfs:label &quot;EndUserType&quot;@en ;
     rdfs:comment &quot;The EndUserType class is a component of the EURAKNOS data model used with the aim to denote the type of the end users that could potentially be interested in a specific data object (i.e. an instance of the Output class).&quot;@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty :hasDescription ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
             owl:allValuesFrom :StakeholderType ;
-            owl:onProperty :hasName ] .
+            owl:onProperty :hasName ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasDescription ;
+            owl:someValuesFrom xsd:string ] .
 
 </pre>
 
@@ -1125,10 +1125,10 @@
     rdfs:label &quot;Image&quot;@en ;
     rdfs:comment &quot;An image-based output of a Thematic Network.&quot;@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty :hasHeight ;
+            owl:onProperty :hasWidth ;
             owl:someValuesFrom xsd:float ],
         [ a owl:Restriction ;
-            owl:onProperty :hasWidth ;
+            owl:onProperty :hasHeight ;
             owl:someValuesFrom xsd:float ] ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Output [ a owl:Restriction ;
@@ -1292,11 +1292,11 @@
     rdfs:label &quot;Individual&quot;@en ;
     rdfs:comment &quot;A person/individual that has been in charge of the development of s data object (i.e. output) coming from a Thematic Network.&quot;@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:allValuesFrom :Organisation ;
-            owl:onProperty :isAffiliatedWith ],
-        [ a owl:Restriction ;
             owl:onProperty :hasEmail ;
-            owl:someValuesFrom xsd:string ] ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :Organisation ;
+            owl:onProperty :isAffiliatedWith ] ;
     owl:disjointWith :Organisation ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Creator [ a owl:Restriction ;
@@ -1357,11 +1357,11 @@
             owl:allValuesFrom :EuropeanCountry ;
             owl:onProperty :hasAreaServed ],
         [ a owl:Restriction ;
-            owl:allValuesFrom :TypeOfInvolvement ;
-            owl:onProperty :hasInvolvement ],
-        [ a owl:Restriction ;
             owl:onProperty :hasContactPoint ;
-            owl:someValuesFrom xsd:string ] ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :TypeOfInvolvement ;
+            owl:onProperty :hasInvolvement ] ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Creator [ a owl:Restriction ;
                         owl:allValuesFrom :OrganisationType ;
@@ -1469,14 +1469,53 @@
     rdfs:label &quot;Output&quot;@en ;
     rdfs:comment &quot;The Output class in the EURAKNOS data model is an abstract class used to denote any data object that may be made available by a Thematic Network. The Output class has the following subclasses: Audio, Dataset, Document, Image, Presentation, Software, Video.&quot;@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:allValuesFrom :Creator ;
-            owl:onProperty :isCreatedBy ],
+            owl:onProperty :hasComment ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty :isAccessibleForFree ;
+            owl:someValuesFrom xsd:boolean ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasLicense ;
+            owl:someValuesFrom xsd:anyURI ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :Topic ;
+            owl:onProperty :hasTopic ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasFileSize ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :EuropeanLanguages ;
+            owl:onProperty :hasTitleInLanguage ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :EuropeanLanguages ;
+            owl:onProperty :hasDescriptionInLanguage ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasAggregateRating ;
+            owl:someValuesFrom xsd:float ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :EuropeanLanguages ;
+            owl:onProperty :hasContentInLanguage ],
         [ a owl:Restriction ;
             owl:onProperty :hasKeywords ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
+            owl:allValuesFrom :EuropeanCountry ;
+            owl:onProperty :hasContentRelatedToGeographicLocation ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom :Creator ;
+            owl:onProperty :isCreatedBy ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasTitle ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
             owl:allValuesFrom :EndUserType ;
             owl:onProperty :isUsedBy ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasDescription ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasCommentCount ;
+            owl:someValuesFrom xsd:integer ],
         [ a owl:Restriction ;
             owl:onProperty :hasVersion ;
             owl:someValuesFrom xsd:string ],
@@ -1484,53 +1523,14 @@
             owl:onProperty :hasUrl ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty :hasLicense ;
-            owl:someValuesFrom xsd:anyURI ],
-        [ a owl:Restriction ;
-            owl:onProperty :hasComment ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty :hasDescription ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty :hasFileSize ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty :hasTitle ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty :hasCommentCount ;
-            owl:someValuesFrom xsd:integer ],
-        [ a owl:Restriction ;
             owl:allValuesFrom :EuropeanLanguages ;
             owl:onProperty :hasKeywordsInLanguage ],
-        [ a owl:Restriction ;
-            owl:onProperty :isAccessibleForFree ;
-            owl:someValuesFrom xsd:boolean ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom :EuropeanCountry ;
-            owl:onProperty :hasContentRelatedToGeographicLocation ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom :Topic ;
-            owl:onProperty :hasTopic ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom :EuropeanLanguages ;
-            owl:onProperty :hasDescriptionInLanguage ],
         [ a owl:Restriction ;
             owl:onProperty :hasDateCreated ;
             owl:someValuesFrom xsd:dateTime ],
         [ a owl:Restriction ;
-            owl:allValuesFrom :EuropeanLanguages ;
-            owl:onProperty :hasContentInLanguage ],
-        [ a owl:Restriction ;
             owl:allValuesFrom :Purpose ;
-            owl:onProperty :hasPurpose ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom :EuropeanLanguages ;
-            owl:onProperty :hasTitleInLanguage ],
-        [ a owl:Restriction ;
-            owl:onProperty :hasAggregateRating ;
-            owl:someValuesFrom xsd:float ] .
+            owl:onProperty :hasPurpose ] .
 
 </pre>
 
@@ -1795,19 +1795,19 @@
     rdfs:label &quot;Software&quot;@en ;
     rdfs:comment &quot;A software application made available as the output of a Thematic Network.&quot;@en ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :requiresOperatingSystem ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
             owl:onProperty :hasSoftwareRequirements ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasStorageRequirements ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty :hasMemoryRequirements ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty :isAvailableOnDevice ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty :requiresOperatingSystem ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
-            owl:onProperty :hasStorageRequirements ;
             owl:someValuesFrom xsd:string ] ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Output [ a owl:Restriction ;
@@ -2022,23 +2022,23 @@
     rdfs:label &quot;ThematicNetwork&quot;@en ;
     rdfs:comment &quot;The Thematic Network that has the role of the \&quot;source\&quot; of a data object.&quot;@en ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :hasFullName ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
             owl:onProperty :hasAcronym ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty :hasFullName ;
-            owl:someValuesFrom xsd:string ],
+            owl:allValuesFrom :Domain ;
+            owl:onProperty :isRelatedTo ],
         [ a owl:Restriction ;
             owl:allValuesFrom :Organisation ;
             owl:onProperty :isCoordinatedBy ],
         [ a owl:Restriction ;
-            owl:onProperty :hasUrl ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
             owl:onProperty :hasDescription ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:allValuesFrom :Domain ;
-            owl:onProperty :isRelatedTo ] .
+            owl:onProperty :hasUrl ;
+            owl:someValuesFrom xsd:string ] .
 
 </pre>
 
@@ -2090,14 +2090,14 @@
     rdfs:label &quot;Topic&quot;@en ;
     rdfs:comment &quot;The topic addressed in the content of a specific data object (i.e. an instance of the Output class).&quot;@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty :hasName ;
-            owl:someValuesFrom :TopicName ],
-        [ a owl:Restriction ;
             owl:onProperty :hasDescription ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:allValuesFrom :Domain ;
-            owl:onProperty :isAssociatedWith ] .
+            owl:onProperty :isAssociatedWith ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasName ;
+            owl:someValuesFrom :TopicName ] .
 
 </pre>
 
@@ -2254,16 +2254,16 @@
     rdfs:label &quot;Video&quot;@en ;
     rdfs:comment &quot;A video output of a Thematic Network.&quot;@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty :hasPlayerType ;
-            owl:someValuesFrom xsd:string ],
-        [ a owl:Restriction ;
             owl:onProperty :hasVideoFrameSize ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
-            owl:onProperty :hasDuration ;
+            owl:onProperty :hasPlayerType ;
             owl:someValuesFrom xsd:string ],
         [ a owl:Restriction ;
             owl:onProperty :hasTranscript ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasDuration ;
             owl:someValuesFrom xsd:string ] ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( :Output [ a owl:Restriction ;
