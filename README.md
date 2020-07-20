@@ -1,6 +1,6 @@
 ![Generate documentation](https://github.com/MaastrichtU-IDS/euraknos-ontology/workflows/Generate%20documentation/badge.svg) 
 
-OWL Ontology for the EURAKNOS project, and documentation website.
+OWL Ontology, with its documentation website, for the EURAKNOS and [EUREKA](https://h2020eureka.eu/about) projects.
 
 Access the Euraknos ontology documentation at [**https://maastrichtu-ids.github.io/euraknos-ontology 📖**](https://maastrichtu-ids.github.io/euraknos-ontology) 
 
