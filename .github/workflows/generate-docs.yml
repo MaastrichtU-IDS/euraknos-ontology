@@ -5,7 +5,7 @@ on:
   push:
     branches: [ master ]
     paths:
-    - 'EURAKNOS_ontology.owl'
+    - 'euraknos-ontology.owl'
 
 jobs:
   generate-docs:
@@ -29,10 +29,10 @@ jobs:
 
     - name: Generate docs
       run: |
-        ontospy gendocs -o docs/summary --type 1 --nobrowser EURAKNOS_ontology.owl
-        ontospy gendocs -o docs/browse --type 2 --nobrowser EURAKNOS_ontology.owl
-        ontospy gendocs -o docs/classtree --type 4 --nobrowser EURAKNOS_ontology.owl
-        ontospy gendocs -o docs/graph --type 10 --nobrowser EURAKNOS_ontology.owl
+        ontospy gendocs -o docs/summary --type 1 --nobrowser euraknos-ontology.owl
+        ontospy gendocs -o docs/browse --type 2 --nobrowser euraknos-ontology.owl
+        ontospy gendocs -o docs/classtree --type 4 --nobrowser euraknos-ontology.owl
+        ontospy gendocs -o docs/graph --type 10 --nobrowser euraknos-ontology.owl
 
     # - name: Hotfix graph nodes sizes
     #   run: |

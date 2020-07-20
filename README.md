@@ -20,19 +20,19 @@ We are generating 4 differents pages in subfolder of the `docs/` folder. The fol
 
 ```bash
 mkdir -p docs/summary
-ontospy gendocs -o docs/summary --type 1 --nobrowser EURAKNOS_ontology.owl
+ontospy gendocs -o docs/summary --type 1 --nobrowser euraknos-ontology.owl
 # >1
 
 mkdir -p docs/browse
-ontospy gendocs -o docs/browse --type 2 --nobrowser EURAKNOS_ontology.owl
+ontospy gendocs -o docs/browse --type 2 --nobrowser euraknos-ontology.owl
 # >2
 
 mkdir -p docs/classtree
-ontospy gendocs -o docs/classtree --type 4 --nobrowser EURAKNOS_ontology.owl
+ontospy gendocs -o docs/classtree --type 4 --nobrowser euraknos-ontology.owl
 # >4
 
 mkdir -p docs/graph
-ontospy gendocs -o docs/graph --type 10 --nobrowser EURAKNOS_ontology.owl
+ontospy gendocs -o docs/graph --type 10 --nobrowser euraknos-ontology.owl
 # >10
 ```
 
@@ -46,4 +46,4 @@ The Graph visualisation can be improved at:
 
 [WebVOWL](http://www.visualdataweb.de/webvowl/), d3.js graph viewer: 
 
-http://www.visualdataweb.de/webvowl/#iri=https://raw.githubusercontent.com/MaastrichtU-IDS/euraknos-ontology/master/EURAKNOS_ontology.owl
+http://www.visualdataweb.de/webvowl/#iri=https://raw.githubusercontent.com/MaastrichtU-IDS/euraknos-ontology/master/euraknos-ontology.owl
