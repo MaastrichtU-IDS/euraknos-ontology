@@ -2,10 +2,10 @@ name: Generate documentation
 
 on:
   workflow_dispatch:
-  # push:
-  #   branches: [ master ]
-  #   paths:
-  #   - 'euraknos-ontology.owl'
+  push:
+    branches: [ master ]
+    paths:
+    - 'euraknos-ontology.owl'
 
 jobs:
   generate-docs:
@@ -43,6 +43,6 @@ jobs:
       run: |
         git config --global user.name 'Vincent Emonet'
         git config --global user.email 'vincent.emonet@maastrichtuniversity.nl'
-        git commit -am "Automatically generate documentation from the Euraknos OWL ontology file using Ontospy gendocs."
+        git add -A && git commit -m "Automatically generate documentation from the EURAKNOS OWL ontology file using Ontospy gendocs."
         git push
     
