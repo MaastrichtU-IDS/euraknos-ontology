@@ -152,7 +152,71 @@
 
 
 /*pygments css*/
-
+.highlight .hll { background-color: #ffffcc }
+.highlight  { background: #f8f8f8; }
+.highlight .c { color: #408080; font-style: italic } /* Comment */
+.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .k { color: #008000; font-weight: bold } /* Keyword */
+.highlight .o { color: #666666 } /* Operator */
+.highlight .ch { color: #408080; font-style: italic } /* Comment.Hashbang */
+.highlight .cm { color: #408080; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #BC7A00 } /* Comment.Preproc */
+.highlight .cpf { color: #408080; font-style: italic } /* Comment.PreprocFile */
+.highlight .c1 { color: #408080; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #408080; font-style: italic } /* Comment.Special */
+.highlight .gd { color: #A00000 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: #00A000 } /* Generic.Inserted */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight .gt { color: #0044DD } /* Generic.Traceback */
+.highlight .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #008000 } /* Keyword.Pseudo */
+.highlight .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #B00040 } /* Keyword.Type */
+.highlight .m { color: #666666 } /* Literal.Number */
+.highlight .s { color: #BA2121 } /* Literal.String */
+.highlight .na { color: #7D9029 } /* Name.Attribute */
+.highlight .nb { color: #008000 } /* Name.Builtin */
+.highlight .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.highlight .no { color: #880000 } /* Name.Constant */
+.highlight .nd { color: #AA22FF } /* Name.Decorator */
+.highlight .ni { color: #999999; font-weight: bold } /* Name.Entity */
+.highlight .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #0000FF } /* Name.Function */
+.highlight .nl { color: #A0A000 } /* Name.Label */
+.highlight .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.highlight .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.highlight .nv { color: #19177C } /* Name.Variable */
+.highlight .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mb { color: #666666 } /* Literal.Number.Bin */
+.highlight .mf { color: #666666 } /* Literal.Number.Float */
+.highlight .mh { color: #666666 } /* Literal.Number.Hex */
+.highlight .mi { color: #666666 } /* Literal.Number.Integer */
+.highlight .mo { color: #666666 } /* Literal.Number.Oct */
+.highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
+.highlight .sc { color: #BA2121 } /* Literal.String.Char */
+.highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #BA2121 } /* Literal.String.Double */
+.highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.highlight .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.highlight .sx { color: #008000 } /* Literal.String.Other */
+.highlight .sr { color: #BB6688 } /* Literal.String.Regex */
+.highlight .s1 { color: #BA2121 } /* Literal.String.Single */
+.highlight .ss { color: #19177C } /* Literal.String.Symbol */
+.highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #19177C } /* Name.Variable.Class */
+.highlight .vg { color: #19177C } /* Name.Variable.Global */
+.highlight .vi { color: #19177C } /* Name.Variable.Instance */
+.highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
 
 /*overloading this class from pygments*/
 .highlight {
@@ -178,8 +242,7 @@
 
 
 
-  
-      
+    
 <!-- Fixed navbar -->
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
@@ -206,7 +269,7 @@
 
         <li  ><a href="entities-az.html">Entities A-Z</a></li>
         
-        <li class="active"><a href="entities-tree-classes.html">Classes</a></li>
+        <li ><a href="entities-tree-classes.html">Classes</a></li>
         
         
         <li ><a href="entities-tree-properties.html">Properties</a></li>
@@ -226,7 +289,6 @@
   </div>
 </nav>
 
-  
 
 
 
@@ -253,7 +315,7 @@
         </li>
 
         
-          <li class="-second-level" id="sd_classes"><a class="active"href="entities-tree-classes.html">Classes (47)</a>
+          <li class="-second-level" id="sd_classes"><a href="entities-tree-classes.html">Classes (47)</a>
           </li>
 
             
@@ -476,7 +538,7 @@
           
               <li class="second-level" style="line-height: 20px;" id="sd_102"><a   href="prop-schemaversion.html">schema:version</a></li>
           
-              <li class="second-level" style="line-height: 20px;" id="sd_103"><a   href="prop-schemavideoframesize.html">schema:videoFrameSize</a></li>
+              <li class="second-level" style="line-height: 20px;" id="sd_103"><a class="active"  href="prop-schemavideoframesize.html">schema:videoFrameSize</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_104"><a   href="prop-schemawidth.html">schema:width</a></li>
           
@@ -514,7 +576,248 @@
 
 
 
-    
+
+        
+
+
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <ol class="breadcrumb">
+    <li>
+      <a href="index.html">Home</a>
+    </li>
+    <li>
+          <a href="entities-az.html">Entities</a>
+    </li>
+    <li>
+          <a href="entities-tree-properties.html">Properties</a>
+    </li>
+      <li class="active">
+            http://schema.org/videoFrameSize
+        </li>
+  </ol>
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+            <h1>
+
+                schema:videoFrameSize
+                
+                    <small class="label label-info label-xs ">leaf node</small>
+                  
+
+            </h1>
+
+            <hr>
+
+
+
+            <div class="tree-container">
+            <div class="tree">
+                <ul>
+                    
+
+                        <li><a href="entities-tree-properties.html">rdf:Property</a>
+
+                          <ul>
+                            <li><a style="font-weight: bold;" title="'hasVideoFrameSize' - The frame size of the video output.">schema:videoFrameSize</a>
+
+                            
+                              </li>
+
+                          </ul>
+
+                        </li>
+                    
+
+                </ul>
+            </div>
+            </div>
+
+
+
+
+            <div class="row"><div class="col-md-12">
+               <div class="panel panel-default">
+             <div class="panel-heading">
+               <h3 class="panel-title">URI</h3>
+             </div>
+             <div class="panel-body">
+
+                 <code>http://schema.org/videoFrameSize</code>
+             </div>
+           </div>
+            </div></div>
+
+
+
+            
+             <div class="row"><div class="col-md-12">
+               <div class="panel panel-default">
+             <div class="panel-heading">
+               <h3 class="panel-title">Label</h3>
+             </div>
+             <div class="panel-body">
+
+                 hasVideoFrameSize
+             </div>
+           </div>
+            </div></div>
+            
+
+
+            
+            <div class="row"><div class="col-md-12">
+              <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Description</h3>
+            </div>
+            <div class="panel-body">
+
+                The frame size of the video output.
+            </div>
+          </div>
+           </div></div>
+           
+
+
+
+            
+
+
+
+            
+
+
+            <div class="row"><div class="col-md-12">
+              <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Usage</h3>
+            </div>
+
+            <table class="table table-bordered" style="overflow: auto;">
+
+               <tr class="table-classproperties">
+                   <th>DOMAIN</th><th>PROPERTY</th><th>RANGE</th>
+               </tr>
+               <tr>
+                   <td>
+                     
+                         <a>owl:Thing</a> (inferred)
+                     
+                   </td>
+
+                    <td>
+                      schema:videoFrameSize
+                    </td>
+
+                    <td>
+                      
+                          
+                          
+                               <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">xsd:string</a>
+                             
+                            
+                          
+                      
+                    </td>
+            </table>
+
+          </div>
+           </div></div>
+
+
+
+           <div class="row"><div class="col-md-12">
+              <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Implementation</h3>
+            </div>
+            <div class="panel-body implementation-panel">
+
+                
+
+                    <div class="highlight"><pre><span></span><span class="k">@prefix</span><span class="w"> </span><span class="nn">owl:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2002/07/owl#&gt;</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">rdfs:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">schema:</span><span class="w"> </span><span class="nv">&lt;http://schema.org/&gt;</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">xsd:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
+
+<span class="nn">schema:</span><span class="nt">videoFrameSize</span><span class="w"> </span><span class="kt">a</span><span class="w"> </span><span class="nn">owl:</span><span class="nt">DatatypeProperty</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nn">owl:</span><span class="nt">FunctionalProperty</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="nn">rdfs:</span><span class="nt">label</span><span class="w"> </span><span class="s">&quot;hasVideoFrameSize&quot;</span><span class="o">@</span><span class="ge">en</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="nn">rdfs:</span><span class="nt">comment</span><span class="w"> </span><span class="s">&quot;The frame size of the video output.&quot;</span><span class="o">@</span><span class="ge">en</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="nn">rdfs:</span><span class="nt">range</span><span class="w"> </span><span class="nn">xsd:</span><span class="nt">string</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
+</pre></div>
+
+
+                
+            </div>
+          </div>
+           </div></div>
+
+
+
+
         
 
 
@@ -525,214 +828,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-<ol class="breadcrumb">
-  <li>
-    <a href="index.html">Home</a>
-  </li>
-  <li>
-        <a href="entities-az.html">Entities</a>
-    </li>
-    <li class="active">
-          Classes
-      </li>
-</ol>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-  <div class="page-header">
-
-      <h3>Classes Tree
-      </h3>
-      <input id="search-input" type="text" class="form-control" placeholder="Filter...">
-
-  </div>
-
-
-
-     <div class="row"><div class="col-md-12">
-        <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title">Tree</h3>
-      </div>
-      <div class="panel-body entities-list">
-
-          <table class="h"><tr>
-							<td class="tc" colspan=4><a title="http://mappings.dbpedia.org/index.php/OntologyClass:ResearchProject" class="treelinks" href="class-httpmappingsdbpediaorgindexphpontologyclassresearchproject.html">...bpedia.org/index.php/OntologyClass:ResearchProject</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="http://purl.org/dc/dcmitype/Dataset" class="treelinks" href="class-httppurlorgdcdcmitypedataset.html">http://purl.org/dc/dcmitype/Dataset</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="http://purl.org/dc/dcmitype/Image" class="treelinks" href="class-httppurlorgdcdcmitypeimage.html">http://purl.org/dc/dcmitype/Image</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="http://purl.org/dc/terms/FileFormat" class="treelinks" href="class-httppurlorgdctermsfileformat.html">http://purl.org/dc/terms/FileFormat</a></td>
-						  </tr> <tr>
-							<td class="space"></td>
-							<td class="bar"></td>
-							<td class="space"></td>
-							<td><table class="h"><tr>
-							<td class="tc" colspan=4><a title="https://euraknos.eu/ontology#AudioOutputFormat" class="treelinks" href="class-ontologyaudiooutputformat.html">ontology:AudioOutputFormat</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="https://euraknos.eu/ontology#DatasetOutputFormat" class="treelinks" href="class-ontologydatasetoutputformat.html">ontology:DatasetOutputFormat</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="https://euraknos.eu/ontology#DocumentOutputFormat" class="treelinks" href="class-ontologydocumentoutputformat.html">ontology:DocumentOutputFormat</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="https://euraknos.eu/ontology#ImageOutputFormat" class="treelinks" href="class-ontologyimageoutputformat.html">ontology:ImageOutputFormat</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="https://euraknos.eu/ontology#PresentationOutputFormat" class="treelinks" href="class-ontologypresentationoutputformat.html">ontology:PresentationOutputFormat</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="https://euraknos.eu/ontology#SoftwareOutputFormat" class="treelinks" href="class-ontologysoftwareoutputformat.html">ontology:SoftwareOutputFormat</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="https://euraknos.eu/ontology#SpreadsheetDigitalDocumentOutputFormat" class="treelinks" href="class-ontologyspreadsheetdigitaldocumentoutputformat.html">ontology:SpreadsheetDigitalDocumentOutputFormat</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="https://euraknos.eu/ontology#VideoOutputFormat" class="treelinks" href="class-ontologyvideooutputformat.html">ontology:VideoOutputFormat</a></td>
-						  </tr></table></td>
-							</tr><tr>
-							<td class="tc" colspan=4><a title="http://www.w3.org/ns/dcat#Dataset" class="treelinks" href="class-httpwwww3orgnsdcatdataset.html">http://www.w3.org/ns/dcat#Dataset</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="http://xmlns.com/foaf/0.1/Person" class="treelinks" href="class-httpxmlnscomfoaf01person.html">http://xmlns.com/foaf/0.1/Person</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="https://euraknos.eu/ontology/schema.org/CreativeWork" class="treelinks" href="class-httpseuraknoseuontologyschemaorgcreativework.html">...tps://euraknos.eu/ontology/schema.org/CreativeWork</a></td>
-						  </tr> <tr>
-							<td class="space"></td>
-							<td class="bar"></td>
-							<td class="space"></td>
-							<td><table class="h"><tr>
-							<td class="tc" colspan=4><a title="http://schema.org/DigitalDocument" class="treelinks" href="class-schemadigitaldocument.html">schema:DigitalDocument</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="http://schema.org/MediaObject" class="treelinks" href="class-schemamediaobject.html">schema:MediaObject</a></td>
-						  </tr></table></td>
-							</tr><tr>
-							<td class="tc" colspan=4><a title="https://euraknos.eu/ontology#Creator" class="treelinks" href="class-ontologycreator.html">ontology:Creator</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="https://euraknos.eu/ontology#Domain" class="treelinks" href="class-ontologydomain.html">ontology:Domain</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="https://euraknos.eu/ontology#KnowledgeObjectType" class="treelinks" href="class-ontologyknowledgeobjecttype.html">ontology:KnowledgeObjectType</a></td>
-						  </tr> <tr>
-							<td class="space"></td>
-							<td class="bar"></td>
-							<td class="space"></td>
-							<td><table class="h"><tr>
-							<td class="tc" colspan=4><a title="https://euraknos.eu/ontology#AudioOutputType" class="treelinks" href="class-ontologyaudiooutputtype.html">ontology:AudioOutputType</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="https://euraknos.eu/ontology#DatasetOutputType" class="treelinks" href="class-ontologydatasetoutputtype.html">ontology:DatasetOutputType</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="https://euraknos.eu/ontology#DocumentOutputType" class="treelinks" href="class-ontologydocumentoutputtype.html">ontology:DocumentOutputType</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="https://euraknos.eu/ontology#ImageOutputType" class="treelinks" href="class-ontologyimageoutputtype.html">ontology:ImageOutputType</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="https://euraknos.eu/ontology#PresentationOutputType" class="treelinks" href="class-ontologypresentationoutputtype.html">ontology:PresentationOutputType</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="https://euraknos.eu/ontology#SoftwareOutputType" class="treelinks" href="class-ontologysoftwareoutputtype.html">ontology:SoftwareOutputType</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="https://euraknos.eu/ontology#SpreadsheetDigitalDocumentType" class="treelinks" href="class-ontologyspreadsheetdigitaldocumenttype.html">ontology:SpreadsheetDigitalDocumentType</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="https://euraknos.eu/ontology#VideoOutputType" class="treelinks" href="class-ontologyvideooutputtype.html">ontology:VideoOutputType</a></td>
-						  </tr></table></td>
-							</tr><tr>
-							<td class="tc" colspan=4><a title="https://euraknos.eu/ontology#OrganisationType" class="treelinks" href="class-ontologyorganisationtype.html">ontology:OrganisationType</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="https://euraknos.eu/ontology#Purpose" class="treelinks" href="class-ontologypurpose.html">ontology:Purpose</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="https://euraknos.eu/ontology#StakeholderType" class="treelinks" href="class-ontologystakeholdertype.html">ontology:StakeholderType</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="https://euraknos.eu/ontology#Topic" class="treelinks" href="class-ontologytopic.html">ontology:Topic</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="https://euraknos.eu/ontology#TypeOfInvolvement" class="treelinks" href="class-ontologytypeofinvolvement.html">ontology:TypeOfInvolvement</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="http://schema.org/Audience" class="treelinks" href="class-schemaaudience.html">schema:Audience</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="http://schema.org/AudioObject" class="treelinks" href="class-schemaaudioobject.html">schema:AudioObject</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="http://schema.org/Country" class="treelinks" href="class-schemacountry.html">schema:Country</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="http://schema.org/Dataset" class="treelinks" href="class-schemadataset.html">schema:Dataset</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="http://schema.org/ImageObject" class="treelinks" href="class-schemaimageobject.html">schema:ImageObject</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="http://schema.org/Language" class="treelinks" href="class-schemalanguage.html">schema:Language</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="http://schema.org/Organization" class="treelinks" href="class-schemaorganization.html">schema:Organization</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="http://schema.org/Person" class="treelinks" href="class-schemaperson.html">schema:Person</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="http://schema.org/PresentationDigitalDocument" class="treelinks" href="class-schemapresentationdigitaldocument.html">schema:PresentationDigitalDocument</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="http://schema.org/SoftwareApplication" class="treelinks" href="class-schemasoftwareapplication.html">schema:SoftwareApplication</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="http://schema.org/SpreadsheetDigitalDocument" class="treelinks" href="class-schemaspreadsheetdigitaldocument.html">schema:SpreadsheetDigitalDocument</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="http://schema.org/TextDigitalDocument" class="treelinks" href="class-schematextdigitaldocument.html">schema:TextDigitalDocument</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="http://schema.org/VideoObject" class="treelinks" href="class-schemavideoobject.html">schema:VideoObject</a></td>
-						  </tr><tr>
-							<td class="tc" colspan=4><a title="http://rdfs.org/ns/void#Dataset" class="treelinks" href="class-voiddataset.html">void:Dataset</a></td>
-						  </tr></table>
-
-
-      </div>
-    </div>
-     </div></div>
-
-
-
-
-
-
-    <div class="container margin50">
-
-
-    </div> <!-- /container -->
-
-
-  
 
 
 	</div><!-- /#page-content-wrapper -->
@@ -802,44 +897,27 @@ $('#search-input-sidebar').keyup(function() {
 
 
 
+  <!-- Scroll Sidebar Script -->
+
+  
+  
+
+  <script type="text/javascript">
+
+    $(document).ready(function (){
+      $('#sidebar-wrapper').animate({
+          scrollTop: $("#sd_103").offset().top - 100
+      }, 100);
+    });
+
+  </script>
 
 
 
 
 
-<script type="text/javascript">
-
-// http://stackoverflow.com/questions/9127498/how-to-perform-a-real-time-search-and-filter-on-a-html-table
-
-  $('#search-input').keyup(function() {
-
-    var val = $.trim($(this).val()).replace(/ +/g, ' ').toLowerCase();
-
-    // var $rows = $(this).next(".entities-list").find("div");
-    var $rows = $(this).parent().next().find(".entities-list tr");
-
-    $rows.show().filter(function() {
-        var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
-        return !~text.indexOf(val);
-    }).hide();
-});
 
 
-</script>
-
-
-
-<!-- Scroll Sidebar Script -->
-
-<script type="text/javascript">
-
-  $(document).ready(function (){
-    $('#sidebar-wrapper').animate({
-        scrollTop: $("#sd_classes").offset().top - 100
-    }, 100);
-  });
-
-</script>
 
 
 
